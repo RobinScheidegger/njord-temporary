@@ -26,10 +26,10 @@ body {
     justify-content: center;
 }
 .home__background {
-    max-height: 100vh;
+    max-height: 110vh;
     min-width: 100%;
     object-fit: cover;
-    filter: brightness(40%);
+    filter: brightness(60%);
 }
 .home__logo {
     position: absolute;
@@ -64,7 +64,6 @@ body {
 .side__description {
     width: 100%;
 }
-
 /* über 1200 */
 @media (min-width: 1201px) {
     .about__div {
@@ -77,7 +76,6 @@ body {
         width: 50%;
     }
 }
-
 /* unter 1200 */
 @media (max-width: 1200px) {
     .about__div {
@@ -89,14 +87,12 @@ body {
     }
     
 }
-
 /* über 800 */
 @media (min-width: 801px) {
     .div__side {
         width: 50%;
     }
 }
-
 /* unter 800 */
 @media (max-width: 800px) {
     .about__div {
@@ -117,6 +113,65 @@ body {
 
 
 /* ---- TOUR ---- */
+.tour {
+    /* background-image: linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url("../assets/pictures/DSC_3885.jpg"); */
+    background-color: #111111;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+.tour__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.list__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row__date {
+    width: 30%;
+}
+.row__location {
+    width: 40%;
+}
+.row__info {
+    width: 30%;
+}
+/* über 1200 */
+@media (min-width: 1201px) {
+    .tour__list {
+        width: 1140px;
+    }
+}
+/* unter 1200 */
+@media (max-width: 1200px) {
+    .tour__list {
+        width: 100%;
+        margin: 0 40px 0 40px;
+    }
+    
+}
+/* über 800 */
+@media (min-width: 801px) {
+    
+}
+/* unter 800 */
+@media (max-width: 800px) {
+    .tour__list {
+        width: 100%;
+        margin: 0 24px 0 24px;
+    }
+    .list__row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .row__date, .row__info, .row__location {
+        max-width:fit-content;
+        min-width:fit-content;
+    }
+}
 
 
 
