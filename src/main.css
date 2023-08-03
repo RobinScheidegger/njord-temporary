@@ -114,11 +114,19 @@ body {
 
 /* ---- TOUR ---- */
 .tour {
+    display: flex;
+    flex-direction: column;
+    padding-top: 72px;
     /* background-image: linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url("../assets/pictures/DSC_3885.jpg"); */
     background-color: #111111;
-    height: 700px;
+}
+.tour__title {
+    text-align: center;
+}
+.tour__content {
     display: flex;
     justify-content: center;
+    padding-top: 16px;
 }
 .tour__list {
     display: flex;
@@ -129,8 +137,11 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid #ffffff;
+    padding: 0 16px 0 16px;
 }
 .row__date {
+    font-weight: 600;
     width: 30%;
 }
 .row__location {
@@ -166,17 +177,23 @@ body {
     .list__row {
         flex-direction: column;
         align-items: center;
+        padding: 0 0 0 0;
     }
     .row__date, .row__info, .row__location {
         max-width:fit-content;
         min-width:fit-content;
+    }
+    .tour {
+        padding-top: 40px;
     }
 }
 
 
 
 /* ---- MEDIA ---- */
-
+.media {
+    background-color: #222222;
+}
 
 
 /* ---- FONT ---- */
@@ -229,7 +246,14 @@ p {
         font-size: 32px;
     }
     p {
-        font-size: 14px;
+        font-size: 16px;
     }
+}
+
+/* ---- GRADIENT ---- */
+.gradient {
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(#111111, #222222);
 }
 
