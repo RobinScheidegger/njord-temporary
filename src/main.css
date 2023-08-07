@@ -194,6 +194,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 64px;
 }
 .media__title {
 }
@@ -221,7 +222,6 @@ body {
     width: 100%;
 }
 
-
 /* über 1200 */
 @media (min-width: 1201px) {
     .div__pictures {
@@ -247,6 +247,9 @@ body {
 }
 /* unter 800 */
 @media (max-width: 800px) {
+    .media {
+        padding-bottom: 32px;
+    }
     .div__pictures {
         margin: 0 24px 0 24px;
         flex-wrap: wrap;
@@ -259,6 +262,19 @@ body {
 
 
 
+/* ---- FOOTER ---- */
+.footer {
+    display: flex;
+    justify-content: center;
+}
+.footer__email {
+    margin: 40px 0 40px 0;
+}
+.email__href {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 
 
 /* ---- FONT ---- */
@@ -270,7 +286,7 @@ h1 {
     font-weight: 600;
     margin: 0;
 }
-p {
+p, .email__href {
     font-weight: 400;
     margin: 8px 0 8px 0;
 }
@@ -280,7 +296,7 @@ p {
     h1 {
         font-size: 64px;
     }
-    p {
+    p, .email__href {
         font-size: 20px;
     }
 }
@@ -290,7 +306,7 @@ p {
     h1 {
         font-size: 56px;
     }
-    p {
+    p, .email__href {
         font-size: 20px;
     }
 }
@@ -300,7 +316,7 @@ p {
     h1 {
         font-size: 36px;
     }
-    p {
+    p, .email__href {
         font-size: 16px;
     }
 }
@@ -310,7 +326,7 @@ p {
     h1 {
         font-size: 32px;
     }
-    p {
+    p, .email__href {
         font-size: 16px;
     }
 }
