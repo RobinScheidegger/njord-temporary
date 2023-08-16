@@ -266,6 +266,7 @@ body {
 .footer {
     display: flex;
     justify-content: center;
+    background-color: #111111;
 }
 .footer__email {
     margin: 40px 0 40px 0;
