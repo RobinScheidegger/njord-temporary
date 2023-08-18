@@ -49,8 +49,8 @@ body {
 
 /* ---- ABOUT ---- */
 .about {
-    padding-top: 56px;
-    background-image: linear-gradient(#000000, #111111);
+    padding-top: 72px;
+    background-color: #111111;
     display: flex;
     justify-content: center;
 }
@@ -106,7 +106,7 @@ body {
         max-width: 100%;
     }
     .about {
-        padding-top: 24px;
+        padding-top: 40px;
     }
 }
 
@@ -116,9 +116,9 @@ body {
 .tour {
     display: flex;
     flex-direction: column;
-    padding-top: 72px;
+    padding-top: 56px;
     /* background-image: linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url("../assets/pictures/DSC_3885.jpg"); */
-    background-color: #111111;
+    background-image: linear-gradient(#000000, #111111);
 }
 .tour__title {
     text-align: center;
@@ -182,7 +182,7 @@ body {
         min-width:fit-content;
     }
     .tour {
-        padding-top: 40px;
+        padding-top: 24px;
     }
 }
 
@@ -200,6 +200,9 @@ body {
 }
 .media__div {
     padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 .div__pictures {
     display: flex;
@@ -208,18 +211,6 @@ body {
 .pictures__picture {
     padding: 8px;
     background-color: #f5eedc;
-}
-.pictures__videos {
-    display: flex;
-    justify-content: center;
-    padding-top: 56px;
-}
-.videos__video {
-    padding: 8px;
-    background-color: #f5eedc;
-}
-.video__vid {
-    width: 100%;
 }
 
 /* über 1200 */
@@ -274,6 +265,7 @@ body {
 .email__href {
     color: #ffffff;
     text-decoration: none;
+    font-size: 32px;
 }
 
 
@@ -287,7 +279,11 @@ h1 {
     font-weight: 600;
     margin: 0;
 }
-p, .email__href {
+.email__href {
+    font-weight: 400;
+    margin: 8px 0 8px 0;
+}
+p {
     font-weight: 400;
     margin: 8px 0 8px 0;
 }
@@ -297,7 +293,10 @@ p, .email__href {
     h1 {
         font-size: 64px;
     }
-    p, .email__href {
+    .email__href {
+        font-size: 28px;
+    }
+    p {
         font-size: 20px;
     }
 }
@@ -307,7 +306,10 @@ p, .email__href {
     h1 {
         font-size: 56px;
     }
-    p, .email__href {
+    .email__href {
+        font-size: 28px;
+    }
+    p {
         font-size: 20px;
     }
 }
@@ -317,7 +319,10 @@ p, .email__href {
     h1 {
         font-size: 36px;
     }
-    p, .email__href {
+    .email__href {
+        font-size: 20px;
+    }
+    p {
         font-size: 16px;
     }
 }
@@ -327,7 +332,10 @@ p, .email__href {
     h1 {
         font-size: 32px;
     }
-    p, .email__href {
+    .email__href {
+        font-size: 16px;
+    }
+    p {
         font-size: 16px;
     }
 }
